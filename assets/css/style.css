@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    background: white;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+
+nav .icon {
+    display: flex;
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+
+nav ol {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+nav ol li {
+    margin: 0 2%;
+}
+
+nav ol li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+nav ol li:hover a{
+    background: black;
+    color: white;
+    border-radius: 5em;
+}
+
+.box {
+    box-sizing: border-box;
+    display: flex;   
+    top: 50%;
+    left: 50%;
+    transform: -50%, -50%;
+           
+}
+
+input.src {    
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #444;
+    border: 3px solid #C8232C;
+    background: #fff url("./img/icons8-search.svg") no-repeat 9px center;
+    margin-right: 15px;
+    width: 60px;
+    transition: all .5s;    
+}
+
+input.src:hover {
+    width: 300px;
+    background-color: #fff;
+    border-color: #8c10b3;
+    box-shadow: 0 0 5px #6dcff680;
+
+}
+
+.pinte {
+    width: 50px;
+    height: auto;
+}
+
+.pinte1 {
+    width: 30px;
+    height: auto;
+}
+
+.imagen {    
+    object-fit: contain;    
+}
+
+.imagen:hover {
+    background: #8c10b3;
+    transition: background-color 2s;
+}
+
+.parr {
+    margin: -.2em;
+    font-size: 15px;
+}
+
+:root {
+    --card_width: 250px;
+    --card_border_radius: 16px;
+    --row_increment: 10px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+    background-color: white;    
+
+}
+
+.card p:hover {
+    font-size: 2rem;
+    color: #444;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    padding: 0;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+    width: 230px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    padding: 0px;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: #C8232C;
+       
+    
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+   
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+    
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+    
+}
